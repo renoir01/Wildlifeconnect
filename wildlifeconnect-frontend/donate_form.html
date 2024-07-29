@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="WildlifeConnect: Donate to Wildlife Conservation" />
+  <meta name="author" content="WildlifeConnect" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+  <title>WildlifeConnect - Donate</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header section -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+          <span>WildlifeConnect</span>
+        </a>
+        <!-- Navigation code here -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- Donate form section -->
+  <section class="donate_form_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>Donate Now</h2>
+        <p>Your donation helps us protect wildlife and their habitats.</p>
+      </div>
+      <form id="donationForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="amount">Donation Amount:</label>
+          <input type="number" class="form-control" id="amount" name="amount" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Donate</button>
+      </form>
+      <div id="thankYouMessage" style="display: none;">
+        <h3>Thank you for your support!</h3>
+        <p>Your donation is greatly appreciated.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer class="footer_section">
+    <!-- Footer content here -->
+  </footer>
+
+  <!-- bootstrap core js -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <script>
+    document.getElementById('donationForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting the traditional way
+      document.getElementById('donationForm').style.display = 'none'; // Hide the form
+      document.getElementById('thankYouMessage').style.display = 'block'; // Show the thank you message
+    });
+  </script>
+</body>
+</html>

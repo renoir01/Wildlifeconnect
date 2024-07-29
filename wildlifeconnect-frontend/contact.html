@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="wildlife, contact, form" />
+  <meta name="description" content="Contact WildlifeConnect" />
+  <meta name="author" content="WildlifeConnect" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+  <title>Contact | WildlifeConnect</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- Responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .contact_form_section {
+      margin: 50px 0;
+    }
+    .contact_form {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .contact_form h2 {
+      margin-bottom: 30px;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+        .header_section {
+          background-color: #007BFF; /* Blue background */
+          padding: 15px 0;
+        }
+    
+        .map_section {
+          background-color: #e0f7fa; /* Light Blue Background */
+          padding: 20px 0;
+        }
+    
+        #map {
+          height: 500px;
+          width: 100%;
+          border: 2px solid #00796b; /* Darker Blue Border */
+        }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header section starts -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+          <span>WildlifeConnect</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="parks.html">Parks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="booking.html">Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="community.html">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="donate.html">Donate</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+            </li>
+            <form class="form-inline">
+              <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End header section -->
+
+  <!-- Contact Form section -->
+  <section class="contact_form_section layout_padding">
+    <div class="container">
+      <div class="contact_form">
+        <h2>Contact Us</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Subject of your message" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Your message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Form section -->
+
+  <!-- Footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>&copy; <span id="displayYear"></span> All Rights Reserved By <a href="https://wildlifeconnect.org">WildlifeConnect</a></p>
+    </div>
+  </footer>
+  <!-- End Footer section -->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- Custom JS -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <script>
+    // Set the current year in the footer
+    document.getElementById('displayYear').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>
